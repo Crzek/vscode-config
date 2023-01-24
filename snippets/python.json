@@ -1,0 +1,167 @@
+{
+	// Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	
+
+
+	// los Caracteres especiales en JSON --->\
+
+
+	"version python3":{
+		"prefix": "p#!3",			// con que lo voy a llamar
+		"body": [
+			"#!/usr/bin/env python3",
+			"# -*- coding: utf-8 -*-"
+
+		],
+		"description": "version python3" 
+
+	},
+
+	"version python":{
+		"prefix": "p#!",			// con que lo voy a llamar
+		"body": [
+			"#!/usr/bin/env python",
+			"# -*- coding: utf-8 -*-"
+
+		],
+		"description": "version python" 
+
+	},
+	// docs file
+	"docs":{
+		"prefix": "docs",
+		"body": [
+		"\"\"\"",
+		"File: ${1:Filename('$1.py', 'foo.py')`}",
+		"Author: `g:snips_author",
+		"Email: `g:snips_email",
+		"Github: `g:snips_github",
+		"Description: ${0}",
+		"\"\"\""
+		],
+		"description": "documentation python"
+	},
+	
+
+	"new funtion":{
+		"prefix": "def~",
+		"body": [
+			"def ${1:funtion}(${2:arg}):",
+   		"\t\"\"\"",		// para poner cada " --\", si son 2 "---> \"\"
+			"\t${3:coment}",
+			"",
+			"\tinput :${4}",
+			"\treturn :${5}",
+			"\t\"\"\"",
+			"\t${6:pass}"
+		],
+		"description": "new funtion with arg"	
+
+	},
+	"with~":{
+		"prefix": "with~",
+		"body": [
+			"with ${1:expr} as ${2:var}:",
+   		"\t${0:pass}",
+		],
+		"description": "new funtion with arg"	
+
+	
+	},
+	// Clase
+	"new Class object py2":{
+		"prefix": "cl2",
+		"body": [
+			"class ${1:className}(${2:object}):",
+   		"\t\"\"\"${3:docstring for} \"\"\"",		// para poner cada " --\", si son 2 "---> \"\"
+			"\tdef __init__(self,${3:arg}):",
+			"\t\t${5:pass}"	
+		],
+		"description": "new class with init, para heredar de una clase",	
+
+	},
+	"new Class init":{
+		"prefix": "cla",
+		"body": [
+			"class ${1:className}:",
+   		"\t\"\"\"${3:docstring for} \"\"\"",		// para poner cada " --\", si son 2 "---> \"\"
+			"\tdef __init__(self,${3:arg}):",
+			"\t\t${5:pass}"	
+		],
+		"description": "new class with init",	
+
+	},
+	"new Class docs" :{
+		"prefix": "clai",
+		"body": [
+			"class ${1:className}:",
+   		"\t\"\"\"${2:docstring for} \"\"\"",		// para poner cada " --\", si son 2 "---> \"\"
+			"",
+			"\tdef __init__(self,${3:arg}):",
+			"\t\t${5:pass}"	
+		],
+		"description": "new class with init and docs",	
+
+	},
+
+	// metodo 
+	"Metodo get_name":{
+		"prefix": "clget",
+		"body": [
+			"def get_${1:name}(self):",
+      "\treturn self.${1:name}"
+	],
+	"description": "Class method get Name "
+	},
+	"Metodo set_name":{
+		"prefix": "clset",
+		"body": [
+			"def set_${1:name}(self,${2:arg}):",
+   		"\tself.${3:name} = ${2:arg}"
+		],
+		"description": "Class method set Name"
+	},
+	"Metodo __str__":{
+		"prefix": "clstr",
+		"body": [
+			"def __str__(self) -> str:",
+      "\treturn f\"${1:Name}: {self.${1:Name}}\""
+		],
+		"description": "cuando printeas un atributo, salida al usuario"
+	},
+
+	"Metodo __repr__":{
+		"prefix": "crepr",
+		"body": [
+   		"def __repr__(self) -> str:",
+      "\t#return  self.__str__()",
+      "\treturn self.${1:Name}"
+		],
+		"description": "para debugear el codigo y que se muestre de forma legible"
+	},
+
+
+	// main
+	"if__main__=='__name__':":{
+		"prefix": "if-main",
+		"body": [
+			"if __name__ == '__main__':",
+    	"\t${1:main()}"
+		],
+		"description": "if name==main:---main() es la funcion principal del programa"
+	}
+
+
+}

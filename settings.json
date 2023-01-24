@@ -1,0 +1,50 @@
+{
+    "workbench.preferredHighContrastColorTheme": "Default Dark+",
+    "workbench.iconTheme": "material-icon-theme",
+
+    // Editor
+    "editor.fontLigatures": false,
+    "editor.fontFamily": "Hack Nerd Font",
+    "editor.fontSize": 12,
+    "editor.fontWeight": "normal",
+    "editor.tabSize": 2,
+    "editor.tabCompletion": "off",
+    "editor.lineNumbers": "relative",
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "off"
+    },
+    "editor.acceptSuggestionOnEnter": "on",
+   
+    // Terminal
+    "terminal.integrated.fontSize": 11,
+
+
+    // vim
+    //"vim.leader": " 
+    "vim.autoindent": true,
+    "vim.useSystemClipboard": true,
+    "vim.mouseSelectionGoesIntoVisualMode": true,
+    "vim.statusBarColors.insert": "#943126",
+    "vim.statusBarColors.normal": "#34495E",
+    "vim.statusBarColors.visual": "#7D6608",
+    "vim.statusBarColors.replace": "#F9E79F",
+    "vim.statusBarColorControl": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#34495E",
+        "statusBar.noFolderBackground": "#34495E",
+        "statusBar.debuggingBackground": "#34495E"
+    },
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.preferredDarkColorTheme": "Solarized Dark",
+    "debug.console.fontSize": 13,
+
+    //"vim.neovimConfigPath": "C:/Users/ERICK/AppData/Local/nvim/init.vim"
+    
+
+    
+
+
+
+}
