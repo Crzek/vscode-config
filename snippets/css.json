@@ -1,0 +1,44 @@
+{
+	// Place your snippets for css here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Base css-Background-Margin-Paddding": {
+		"prefix": "/bmp",
+		"body": [
+			"background: ${1:grey};",
+			"border: ${2:1px} solid black;",
+			"margin: ${3:0};",
+			"padding: ${4:0};",
+		],
+		"description": "background, border, margin y padding"
+	},
+	"Format Font-Family": {
+		"prefix": "/ffont",
+		"body": [
+			"font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;",
+			"font-size: ${1:large};",
+			"font-style: normal;",
+			"font-weight: ${2:bold};",
+			"text-transform: ${3:capitalize};",
+			"text-align: ${4:center};",
+		],
+		"description": "font-family, size, style, ewight, transform, align"
+	},
+	"Border-Solid-1px": {
+		"prefix": "/border",
+		"body": [
+			"border${1:-top}: ${2:1}px ${3:solid} ${0:black};",
+		],
+		"description": "BorderTOP"
+	},
+}

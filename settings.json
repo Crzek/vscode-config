@@ -1,7 +1,6 @@
 {
     "workbench.preferredHighContrastColorTheme": "Default Dark+",
     "workbench.iconTheme": "material-icon-theme",
-
     // Editor
     "editor.fontLigatures": false,
     "editor.fontFamily": "Hack Nerd Font",
@@ -13,38 +12,70 @@
     "editor.quickSuggestions": {
         "other": "on",
         "comments": "off",
-        "strings": "off"
+        "strings": true
     },
+    "editor.suggestSelection": "first", //se seleciones la primera sugerencia por defecto
     "editor.acceptSuggestionOnEnter": "on",
-   
     // Terminal
     "terminal.integrated.fontSize": 11,
-
-
     // vim
     //"vim.leader": " 
     "vim.autoindent": true,
     "vim.useSystemClipboard": true,
     "vim.mouseSelectionGoesIntoVisualMode": true,
-    "vim.statusBarColors.insert": "#943126",
-    "vim.statusBarColors.normal": "#34495E",
-    "vim.statusBarColors.visual": "#7D6608",
-    "vim.statusBarColors.replace": "#F9E79F",
-    "vim.statusBarColorControl": true,
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#34495E",
-        "statusBar.noFolderBackground": "#34495E",
-        "statusBar.debuggingBackground": "#34495E"
-    },
+    // "vim.statusBarColors.insert": "#943126",
+    // "vim.statusBarColors.normal": "#34495E",
+    // "vim.statusBarColors.visual": "#7D6608",
+    // "vim.statusBarColors.replace": "#F9E79F",
+    // "vim.statusBarColorControl": true,
     "workbench.colorTheme": "Solarized Dark",
     "workbench.preferredDarkColorTheme": "Solarized Dark",
     "debug.console.fontSize": 13,
-
+    "git.autofetch": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "workbench.editorAssociations": {
+        "*.lnk": "sqlite-viewer.option"
+    },
+    "django.snippets.exclude": [
+        "cms",
+        "wagtail"
+    ],
     //"vim.neovimConfigPath": "C:/Users/ERICK/AppData/Local/nvim/init.vim"
-    
-
-    
-
-
-
+    // tailwind css
+    "tailwindCSS.includeLanguages": {
+        "plaintext": "html"
+    },
+    "editor.wordWrap": "on",
+    //
+    //
+    //Configuracion Pablo Monteserie
+    //Usar emmet cuando estamos codificando con React
+    "files.associations": {
+        "*.js": "javascriptreact"
+    },
+    //Detectar HTML en una cadena de Javascript
+    "emmet.syntaxProfiles": {
+        "javascript": "html"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "html"
+    },
+    // Ir directamente a la definición de una función o variable al hacer ctrl + click sobre ella
+    "editor.multiCursorModifier": "alt",
+    // Salvar un fichero cuando pierda el foco
+    "files.autoSave": "onFocusChange",
+    // Formateado de código automático
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.mouseWheelZoom": true,
+    "workbench.tree.indent": 25,
+    "workbench.tree.renderIndentGuides": "always",
+    //Añadimos una línea roja sobre la pestaña activa
+    "workbench.colorCustomizations": {
+        "tab.activeBorderTop": "#0aff2b"
+    },
+    "liveServer.settings.donotVerifyTags": true,
 }
