@@ -48,7 +48,10 @@
     "tailwindCSS.includeLanguages": {
         "plaintext": "html"
     },
-    "editor.wordWrap": "on",
+    "[html]": {
+        // "editor.suggest.insertMode": "replace",
+        "editor.wordWrap": "off",
+    },
     //
     //
     //Configuracion Pablo Monteserie

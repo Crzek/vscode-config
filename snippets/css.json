@@ -13,17 +13,34 @@
 	// 	"description": "Log output to console"
 	// }
 	"Base css-Background-Margin-Paddding": {
-		"prefix": "/bmp",
+		"prefix": "-bmp",
 		"body": [
 			"background: ${1:grey};",
 			"border: ${2:1px} solid black;",
 			"margin: ${3:0};",
 			"padding: ${4:0};",
+			"box-sizing: border-box;"
 		],
 		"description": "background, border, margin y padding"
 	},
+	"width and height Pixel": {
+		"prefix": "-wihepx",
+		"body": [
+			"width: ${1:200}px;",
+			"height: ${0:300}px};",
+		],
+		"description": "ancho y alto con pixel "
+	},
+	"width and height %": {
+		"prefix": "-wihe",
+		"body": [
+			"width: ${1:200}${2:%};",
+			"height: ${0:300}${2:%};",
+		],
+		"description": "ancho y alto con % o vw/vh"
+	},
 	"Format Font-Family": {
-		"prefix": "/ffont",
+		"prefix": "-ffont",
 		"body": [
 			"font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;",
 			"font-size: ${1:large};",
@@ -35,10 +52,35 @@
 		"description": "font-family, size, style, ewight, transform, align"
 	},
 	"Border-Solid-1px": {
-		"prefix": "/border",
+		"prefix": "-border",
 		"body": [
 			"border${1:-top}: ${2:1}px ${3:solid} ${0:black};",
 		],
 		"description": "BorderTOP"
+	},
+	"url-photo-random": {
+		"prefix": "-lorempixel",
+		"body": [
+			"url=(\"https://picsum.photos/${1:200}/${2:200}\")"
+		],
+		"description": "Generate url=(Photo) Photo WIDTH / HEIGHT"
+	},
+	"Reset styles": {
+		"prefix": "-reset",
+		"body": [
+			"* {",
+			"\tmargin: 0;",
+			"\tpadding: 0;",
+			"\tbox-sizing: border-box;",
+			"}"
+		],
+		"description": "Reset margin and padding 0 and box-sizing"
+	},
+	"Madia Queris small divices 470px": {
+		"prefix": "-@medias",
+		"body": [
+			"@media (max-width:470px) {${0}}"
+		],
+		"description": "Media queris for mobiles 470pxs"
 	},
 }

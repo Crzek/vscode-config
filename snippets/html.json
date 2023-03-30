@@ -13,12 +13,21 @@
 	// 	"description": "Log output to console"
 	// }
 	"svg-fast": {
-		"prefix": "/svg",
+		"prefix": "-svg",
 		"body": [
 			"<svg xmlns=\"${1:src}\" viewBox=\"0 0 100 100\">",
 			"<path d=${2:cordenadas}/>",
 			"</svg>"
 		],
 		"description": "Etiqueta svg con path[d=]"
-	}
+	},
+	// More info for random pixel 
+	// https://picsum.photos/
+	"lorem-pixel": {
+		"prefix": "-lorempx",
+		"body": [
+			"<img src=\"https://picsum.photos/${1:200}/${2:200}\" alt=\"photo ${1:200}/${2:200}\">"
+		],
+		"description": "Generator Photo WIDTH / HEIGHT"
+	},
 }
