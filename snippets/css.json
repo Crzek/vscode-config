@@ -24,7 +24,7 @@
 		"description": "background, border, margin y padding"
 	},
 	"width and height Pixel": {
-		"prefix": "-wihepx",
+		"prefix": "-whpx",
 		"body": [
 			"width: ${1:200}px;",
 			"height: ${0:300}px};",
@@ -32,10 +32,10 @@
 		"description": "ancho y alto con pixel "
 	},
 	"width and height %": {
-		"prefix": "-wihe",
+		"prefix": "-wh",
 		"body": [
-			"width: ${1:200}${2:%};",
-			"height: ${0:300}${2:%};",
+			"width: ${1:200%};",
+			"height: ${0:300%};",
 		],
 		"description": "ancho y alto con % o vw/vh"
 	},
@@ -76,10 +76,10 @@
 		],
 		"description": "Reset margin and padding 0 and box-sizing"
 	},
-	"Madia Queris small divices 576px": {
+	"Madia Queris small divices 676px": {
 		"prefix": "-@mediaS",
 		"body": [
-			"@media (max-width:576px) {${0}}"
+			"@media (max-width:676px) {${0}}"
 		],
 		"description": "For mobiles 470px or less"
 	},

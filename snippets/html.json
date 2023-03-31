@@ -30,4 +30,20 @@
 		],
 		"description": "Generator Photo WIDTH / HEIGHT"
 	},
+	"label and input text": {
+		"prefix": "-labelin",
+		"body": [
+			"<label for=\"${0:nombre}\">${1:Nombre}</label>",
+			"<input type=\"text\" id=\"${0:nombre}\">",
+		],
+		"description": "Generator fast label input"
+	},
+	"label and textbox": {
+		"prefix": "-labeltextbox",
+		"body": [
+			"<label for=\"${0:mensaje}\">{1:Mensaje}</label>",
+			"<textarea name=\"${0:mensaje}\" id=\"${0:mensaje}\"></textarea>"
+		],
+		"description": "Generator fast label and textbox dor comment"
+	},
 }
