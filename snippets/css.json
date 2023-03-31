@@ -76,11 +76,25 @@
 		],
 		"description": "Reset margin and padding 0 and box-sizing"
 	},
-	"Madia Queris small divices 470px": {
-		"prefix": "-@medias",
+	"Madia Queris small divices 576px": {
+		"prefix": "-@mediaS",
 		"body": [
-			"@media (max-width:470px) {${0}}"
+			"@media (max-width:576px) {${0}}"
 		],
-		"description": "Media queris for mobiles 470pxs"
+		"description": "For mobiles 470px or less"
+	},
+	"Madia Queris medium divices 800px": {
+		"prefix": "-@mediaM",
+		"body": [
+			"@media (max-width:800px) {${0}}"
+		],
+		"description": "Media queris medium divices 800px or less"
+	},
+	"Madia Queris custom NUMpx": {
+		"prefix": "-@mediaC",
+		"body": [
+			"@media (max-width:${1:800}px) {${0}}"
+		],
+		"description": "Max-width: 800px Medium screem-> 0px to 800px "
 	},
 }
