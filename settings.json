@@ -1,84 +1,125 @@
 {
-    "workbench.preferredHighContrastColorTheme": "Default Dark+",
-    "workbench.iconTheme": "material-icon-theme",
-    // Editor
-    "editor.fontLigatures": false,
-    "editor.fontFamily": "Hack Nerd Font",
-    "editor.fontSize": 12,
-    "editor.fontWeight": "normal",
-    "editor.tabSize": 2,
-    "editor.tabCompletion": "off",
-    "editor.lineNumbers": "relative",
-    "editor.quickSuggestions": {
-        "other": "on",
-        "comments": "off",
-        "strings": true
-    },
-    "editor.suggestSelection": "first", //se seleciones la primera sugerencia por defecto
-    "editor.acceptSuggestionOnEnter": "on",
-    // Terminal
-    "terminal.integrated.fontSize": 11,
-    // vim
-    //"vim.leader": " 
-    "vim.autoindent": true,
-    "vim.useSystemClipboard": true,
-    "vim.mouseSelectionGoesIntoVisualMode": true,
-    // "vim.statusBarColors.insert": "#943126",
-    // "vim.statusBarColors.normal": "#34495E",
-    // "vim.statusBarColors.visual": "#7D6608",
-    // "vim.statusBarColors.replace": "#F9E79F",
-    // "vim.statusBarColorControl": true,
-    "workbench.colorTheme": "Solarized Dark",
-    "workbench.preferredDarkColorTheme": "Solarized Dark",
-    "debug.console.fontSize": 13,
-    "git.autofetch": true,
-    "workbench.editor.untitled.hint": "hidden",
-    "[python]": {
-        "editor.formatOnType": true
-    },
-    "workbench.editorAssociations": {
-        "*.lnk": "sqlite-viewer.option"
-    },
-    "django.snippets.exclude": [
-        "cms",
-        "wagtail"
-    ],
-    //"vim.neovimConfigPath": "C:/Users/ERICK/AppData/Local/nvim/init.vim"
-    // tailwind css
-    "tailwindCSS.includeLanguages": {
-        "plaintext": "html"
-    },
-    "[html]": {
-        // "editor.suggest.insertMode": "replace",
-        "editor.wordWrap": "off",
-    },
-    //
-    //
-    //Configuracion Pablo Monteserie
-    //Usar emmet cuando estamos codificando con React
-    "files.associations": {
-        "*.js": "javascriptreact"
-    },
-    //Detectar HTML en una cadena de Javascript
-    "emmet.syntaxProfiles": {
-        "javascript": "html"
-    },
-    "emmet.includeLanguages": {
-        "javascript": "html"
-    },
-    // Ir directamente a la definición de una función o variable al hacer ctrl + click sobre ella
-    "editor.multiCursorModifier": "alt",
-    // Salvar un fichero cuando pierda el foco
-    "files.autoSave": "onFocusChange",
-    // Formateado de código automático
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "editor.mouseWheelZoom": true,
-    "workbench.tree.indent": 25,
-    "workbench.tree.renderIndentGuides": "always",
-    //Añadimos una línea roja sobre la pestaña activa
-    "workbench.colorCustomizations": {
-        "tab.activeBorderTop": "#0aff2b"
-    },
-    "liveServer.settings.donotVerifyTags": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Everforest Dark",
+  "workbench.editor.untitled.hint": "hidden",
+  // Editor
+  "editor.bracketPairColorization.enabled": true,
+  "editor.fontLigatures": false,
+  "editor.fontFamily": "Hack Nerd Font",
+  "editor.fontSize": 13,
+  "editor.fontWeight": "normal",
+  "editor.tabSize": 2,
+  "editor.tabCompletion": "off",
+  "editor.lineNumbers": "relative",
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": true
+  },
+  "editor.suggestSelection": "first", //se seleciones la primera sugerencia por defecto
+  "editor.acceptSuggestionOnEnter": "on",
+
+  // Terminal
+  "terminal.integrated.fontSize": 11,
+  //
+  //
+  // vim
+  //"vim.leader": "
+  "vim.autoindent": true,
+  "vim.useSystemClipboard": true,
+  "vim.mouseSelectionGoesIntoVisualMode": true,
+  // "vim.statusBarColors.insert": "#943126",
+  // "vim.statusBarColors.normal": "#34495E",
+  // "vim.statusBarColors.visual": "#7D6608",
+  // "vim.statusBarColors.replace": "#F9E79F",
+  // "vim.statusBarColorControl": true,
+
+  // Comandos para Vim
+  // "vim.normalModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": ["<C-d>"],
+  //     "after": ["addSelectionToNextFindMatch"]
+  //   }
+  // ],
+
+  "debug.console.fontSize": 13,
+  "git.autofetch": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "workbench.editorAssociations": {
+    "*.lnk": "sqlite-viewer.option"
+  },
+  "django.snippets.exclude": ["cms", "wagtail"],
+  //"vim.neovimConfigPath": "C:/Users/ERICK/AppData/Local/nvim/init.vim"
+  // tailwind css
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+  "[html]": {
+    // "editor.suggest.insertMode": "replace",
+    "editor.wordWrap": "off"
+  },
+  //
+  //
+  //Configuracion PABLO Monteserie
+  //Usar emmet cuando estamos codificando con React
+  "files.associations": {
+    "*.js": "javascript",
+    "*.jsx": "javascriptreact"
+  },
+  //Detectar HTML en una cadena de Javascript
+  "emmet.syntaxProfiles": {
+    "javascript": "html"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "html"
+  },
+  // Ir directamente a la definición de una función o variable al hacer ctrl + click sobre ella
+  "editor.multiCursorModifier": "alt",
+  // Salvar un fichero cuando pierda el foco
+  "files.autoSave": "onFocusChange",
+  // Formateado de código automático
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.mouseWheelZoom": true,
+  "workbench.tree.indent": 25,
+  "workbench.tree.renderIndentGuides": "always",
+  // Añadimos una línea roja sobre la pestaña activa
+
+  "workbench.colorCustomizations": {
+    "tab.activeBorderTop": "#0aff4f",
+    // color Brackets
+    "editorBracketHighlight.foreground1": "#ff7272",
+    "editorBracketHighlight.foreground2": "#D99018",
+    "editorBracketHighlight.foreground3": "#f388ff",
+    "editorBracketHighlight.foreground4": "#009dff",
+    "editorBracketHighlight.foreground5": "#22c7a3",
+    "editorBracketHighlight.foreground6": "#ffffff",
+
+    // color para el suggest del Intellisense
+    "editorSuggestWidget.selectedBackground": "#232323",
+    // color del la linea que estamos
+    "editorLineNumber.activeForeground": "#D99018"
+  },
+
+  // colores de la variables
+  // "editor.tokenColorCustomizations": {
+  //   "types": "#009fdffs",
+  //   "strings": "#0s39b00",
+  //   "variables": "#00e5ff"
+  //   "functions": "#009dff"
+  // },
+  "liveServer.settings.donotVerifyTags": true,
+  "window.zoomLevel": -0.5, // zoom del editor
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // tranparencia del editor de 1- 255  ctrl+ alt Z ->dizminuir
+  // ctrl +alt +c -> aumentar
+  "glassit.alpha": 240
 }

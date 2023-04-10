@@ -9,6 +9,46 @@
     "key": "shift+tab",
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-
-  }
+  },
+  {
+    "key": "ctrl+alt+shift+d",
+    "command": "editor.action.addSelectionToPreviousFindMatch",
+    "when": "editorTextFocus || editorFocus"
+  },
+  {
+    "key": "ctrl+alt+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorTextFocus || editorFocus"
+  },
+  {
+    "key": ";",
+    "command": "editor.action.moveSelectionToNextFindMatch",
+    "when": "editorTextFocus && vim.mode =='Visual'"
+  },
+  {
+    "key": ",",
+    "command": "editor.action.moveSelectionToPreviousFindMatch",
+    "when": "editorTextFocus && vim.mode =='Visual'"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor",
+    "when": "!editorIsOpenInNextGroup && !editorIsOpenInPreviousGroup && !multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor",
+    "when": "!editorIsOpenInNextGroup && !editorIsOpenInPreviousGroup && !multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.focusSideBar",
+    "when": "editorFocus && vim.active"
+  },
+  {
+    "key": "ctrl+alt+h",
+    "command": "workbench.action.focusLeftGroup",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {}
 ]
