@@ -16,7 +16,7 @@
     "comments": "off",
     "strings": true
   },
-  "editor.suggestSelection": "first", //se seleciones la primera sugerencia por defecto
+  "editor.suggestSelection": "recentlyUsedByPrefix", //se seleciones la primera sugerencia por defecto
   "editor.acceptSuggestionOnEnter": "on",
 
   // Terminal
@@ -98,7 +98,7 @@
     "editorBracketHighlight.foreground6": "#ffffff",
 
     // color para el suggest del Intellisense
-    "editorSuggestWidget.selectedBackground": "#232323",
+    "editorSuggestWidget.selectedBackground": "#64830f",
     // color del la linea que estamos
     "editorLineNumber.activeForeground": "#D99018"
   },
@@ -110,8 +110,7 @@
   //   "variables": "#00e5ff"
   //   "functions": "#009dff"
   // },
-  "liveServer.settings.donotVerifyTags": true,
-  "window.zoomLevel": -0.5, // zoom del editor
+  "liveServer.settings.donotVerifyTags": true, // zoom del editor
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

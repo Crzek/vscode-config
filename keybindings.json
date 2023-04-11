@@ -3,12 +3,17 @@
   {
     "key": "tab",
     "command": "selectNextSuggestion",
-    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
+  // {
+  //   "key": "",
+  //   "command": "selectFirstSuggestion",
+  //   "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  // },
   {
     "key": "shift+tab",
     "command": "selectPrevSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
   {
     "key": "ctrl+alt+shift+d",
@@ -31,12 +36,12 @@
     "when": "editorTextFocus && vim.mode =='Visual'"
   },
   {
-    "key": "ctrl+tab",
+    "key": "alt+n",
     "command": "workbench.action.nextEditor",
     "when": "!editorIsOpenInNextGroup && !editorIsOpenInPreviousGroup && !multipleEditorGroups"
   },
   {
-    "key": "ctrl+shift+tab",
+    "key": "alt+shift+n",
     "command": "workbench.action.previousEditor",
     "when": "!editorIsOpenInNextGroup && !editorIsOpenInPreviousGroup && !multipleEditorGroups"
   },
@@ -46,9 +51,57 @@
     "when": "editorFocus && vim.active"
   },
   {
-    "key": "ctrl+alt+h",
+    "key": "ctrl+h",
     "command": "workbench.action.focusLeftGroup",
     "when": "editorTextFocus && vim.active && !inDebugRepl"
   },
-  {}
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.focusBelowGroup",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.focusAboveGroup",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusRightGroup",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "enter",
+    "command": "acceptSelectedSuggestion",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    // pasar al siguiente snippet
+    "key": ";",
+    "command": "jumpToNextSnippetPlaceholder",
+    "when": "editorTextFocus && hasNextTabstop && inSnippetMode"
+  },
+  {
+    "key": ",",
+    "command": "jumpToPrevSnippetPlaceholder",
+    "when": "editorTextFocus && hasNextTabstop && inSnippetMode"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "workbench.action.closeGroup",
+    "when": "activeEditorGroupEmpty && multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "tab",
+    "command": "-jumpToNextSnippetPlaceholder &&",
+    "when": "editorTextFocus && hasNextTabstop && inSnippetMode"
+  }
+  // {
+  //   "key": "down",
+  //   "command": "selectNextSuggestion"
+  // }
 ]
