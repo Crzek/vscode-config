@@ -1,6 +1,6 @@
 {
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Everforest Dark",
+  "workbench.colorTheme": "Gruvbox Material Dark",
   "workbench.editor.untitled.hint": "hidden",
   // Editor
   "editor.bracketPairColorization.enabled": true,
@@ -8,7 +8,7 @@
   "editor.fontFamily": "Hack Nerd Font",
   "editor.fontSize": 13,
   "editor.fontWeight": "normal",
-  "editor.tabSize": 2,
+  "editor.tabSize": 1,
   "editor.tabCompletion": "off",
   "editor.lineNumbers": "relative",
   "editor.quickSuggestions": {
@@ -16,9 +16,8 @@
     "comments": "off",
     "strings": true
   },
-  "editor.suggestSelection": "recentlyUsedByPrefix", //se seleciones la primera sugerencia por defecto
+  "editor.suggestSelection": "recentlyUsed", //se seleciones la primera sugerencia por defecto
   "editor.acceptSuggestionOnEnter": "on",
-
   // Terminal
   "terminal.integrated.fontSize": 11,
   //
@@ -33,7 +32,6 @@
   // "vim.statusBarColors.visual": "#7D6608",
   // "vim.statusBarColors.replace": "#F9E79F",
   // "vim.statusBarColorControl": true,
-
   // Comandos para Vim
   // "vim.normalModeKeyBindingsNonRecursive": [
   //   {
@@ -41,16 +39,19 @@
   //     "after": ["addSelectionToNextFindMatch"]
   //   }
   // ],
-
   "debug.console.fontSize": 13,
   "git.autofetch": true,
   "[python]": {
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.python"
   },
   "workbench.editorAssociations": {
-    "*.lnk": "sqlite-viewer.option"
+    "*.lnk": "sqlite-viewer.option",
   },
-  "django.snippets.exclude": ["cms", "wagtail"],
+  "django.snippets.exclude": [
+    "cms",
+    "wagtail"
+  ],
   //"vim.neovimConfigPath": "C:/Users/ERICK/AppData/Local/nvim/init.vim"
   // tailwind css
   "tailwindCSS.includeLanguages": {
@@ -58,7 +59,8 @@
   },
   "[html]": {
     // "editor.suggest.insertMode": "replace",
-    "editor.wordWrap": "off"
+    "editor.wordWrap": "off",
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   //
   //
@@ -83,10 +85,9 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.mouseWheelZoom": true,
-  "workbench.tree.indent": 25,
+  "workbench.tree.indent": 10,
   "workbench.tree.renderIndentGuides": "always",
   // Añadimos una línea roja sobre la pestaña activa
-
   "workbench.colorCustomizations": {
     "tab.activeBorderTop": "#0aff4f",
     // color Brackets
@@ -96,13 +97,11 @@
     "editorBracketHighlight.foreground4": "#009dff",
     "editorBracketHighlight.foreground5": "#22c7a3",
     "editorBracketHighlight.foreground6": "#ffffff",
-
     // color para el suggest del Intellisense
     "editorSuggestWidget.selectedBackground": "#64830f",
     // color del la linea que estamos
     "editorLineNumber.activeForeground": "#D99018"
   },
-
   // colores de la variables
   // "editor.tokenColorCustomizations": {
   //   "types": "#009fdffs",
@@ -115,10 +114,21 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
-
   // tranparencia del editor de 1- 255  ctrl+ alt Z ->dizminuir
   // ctrl +alt +c -> aumentar
-  "glassit.alpha": 240
+  "glassit.alpha": 245,
+  "markdown-preview-enhanced.liveUpdate": true,
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "off",
+  "editor.inlineSuggest.enabled": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "markdown-preview-enhanced.previewTheme": "github-dark.css"
 }

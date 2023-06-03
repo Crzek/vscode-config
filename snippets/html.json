@@ -46,4 +46,19 @@
 		],
 		"description": "Generator fast label and textbox dor comment"
 	},
+	"barra de Navegacion": {
+		"prefix": "-navul",
+		"body": [
+			"<nav>",
+			"\t<ul>",
+			"\t<li><a class=\"active\" href=\"#\">Home</a></li>",
+			"\t<li><a href=\"#\">Home</a></li>",
+			"\t<li><a href=\"#\">Home</a></li>",
+			"\t<li><a href=\"#\">Home</a></li>",
+			"\t<li><a class=\"none\" href=\"#\">Home</a></li>",
+			"\t</ul>",
+			"</nav>",
+		],
+		"description": "Generator fast nav -ul -li -a"
+	},
 }

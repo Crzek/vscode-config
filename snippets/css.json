@@ -72,7 +72,16 @@
 			"\tmargin: 0;",
 			"\tpadding: 0;",
 			"\tbox-sizing: border-box;",
-			"}"
+			"\ttext-transform: capitalize;",
+			"}",
+			"ul li {",
+			"\tlist-style: none;",
+			"}",
+			"a  {",
+			"\ttext-decoration: none;",
+			"\tdisplay: inline-block;",
+			"\tmargin: 5px;",
+			"}",
 		],
 		"description": "Reset margin and padding 0 and box-sizing"
 	},
@@ -96,5 +105,20 @@
 			"@media (max-width:${1:800}px) {${0}}"
 		],
 		"description": "Max-width: 800px Medium screem-> 0px to 800px "
+	},
+	"nav row": {
+		"prefix": "-navrow",
+		"body": [
+			"nav {",
+			"\tbackground: mediumaquamarine;",
+			"\topacity: 0.7;",
+			"\tdisplay: flex;",
+			"\tjustify-content: center;",
+			"\tposition: fixed;",
+			"\ttop: 0;",
+			"\twidth: 100%;",
+			"}",
+		],
+		"description": "van en fila "
 	},
 }
