@@ -1,12 +1,11 @@
 {
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Gruvbox Material Dark",
   "workbench.editor.untitled.hint": "hidden",
   // Editor
   "editor.bracketPairColorization.enabled": true,
   "editor.fontLigatures": false,
   "editor.fontFamily": "Hack Nerd Font",
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "editor.fontWeight": "normal",
   "editor.tabSize": 1,
   "editor.tabCompletion": "off",
@@ -18,8 +17,6 @@
   },
   "editor.suggestSelection": "recentlyUsed", //se seleciones la primera sugerencia por defecto
   "editor.acceptSuggestionOnEnter": "on",
-  // Terminal
-  "terminal.integrated.fontSize": 11,
   //
   //
   // vim
@@ -130,5 +127,13 @@
     "markdown": false,
     "scminput": false
   },
-  "markdown-preview-enhanced.previewTheme": "github-dark.css"
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "settingsSync.ignoredExtensions": [
+    "vscode.theme-quietlight"
+  ],
+  //  configuracion de la terminal del Vscode
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "terminal.integrated.fontFamily": "Hack NF",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontWeight": "normal"
 }
