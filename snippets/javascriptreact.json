@@ -1,0 +1,53 @@
+{
+	// Place your snippets for javascriptreact here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Import files": {
+		"prefix": "-import",
+		"body": [
+			"import ${2:Fucntion} from \"${1:./components}\";",
+		],
+		"description": "importacion"
+	},
+	"Styles components": {
+		"prefix": "-stylesComp",
+		"body": [
+			"import styled from 'styled-components';",
+			"export const ${1:Box} = styled.div`",
+			"\t${2}",
+			"`"
+		],
+		"description": "Structure Stylescomponets"
+	},
+	"Styles-components Fucntion": {
+		"prefix": "-funStyle",
+		"body": [
+			"export const ${1:NameStyles} = styled.${2:div}`",
+			"\t${3}",
+			"`"
+		],
+		"description": "Structure Stylescomponets funtion"
+	},
+	"Structure Components": {
+		"prefix": "-raface",
+		"body": [
+			"import React from 'react'",
+			"const Popap = () => {",
+			"return (",
+			" <div>Popap</div>",
+			")",
+			"}",
+			"export default Popap",
+		]
+	}
+}

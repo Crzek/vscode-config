@@ -1,14 +1,13 @@
 {
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Gruvbox Material Dark",
   "workbench.editor.untitled.hint": "hidden",
   // Editor
   "editor.bracketPairColorization.enabled": true,
   "editor.fontLigatures": false,
   "editor.fontFamily": "Hack Nerd Font",
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "editor.fontWeight": "normal",
-  "editor.tabSize": 1,
+  "editor.tabSize": 4,
   "editor.tabCompletion": "off",
   "editor.lineNumbers": "relative",
   "editor.quickSuggestions": {
@@ -18,8 +17,6 @@
   },
   "editor.suggestSelection": "recentlyUsed", //se seleciones la primera sugerencia por defecto
   "editor.acceptSuggestionOnEnter": "on",
-  // Terminal
-  "terminal.integrated.fontSize": 11,
   //
   //
   // vim
@@ -57,9 +54,12 @@
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
   },
+  "[svg]": {
+    "editor.wordWrap": "on"
+  },
   "[html]": {
     // "editor.suggest.insertMode": "replace",
-    "editor.wordWrap": "off",
+    "editor.wordWrap": "on",
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   //
@@ -116,10 +116,13 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "[jsx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   // tranparencia del editor de 1- 255  ctrl+ alt Z ->dizminuir
   // ctrl +alt +c -> aumentar
-  "glassit.alpha": 245,
-  "markdown-preview-enhanced.liveUpdate": true,
+  // "glassit.alpha": 245,
+  // "markdown-preview-enhanced.liveUpdate": true,
   "editor.minimap.enabled": false,
   "editor.wordWrap": "off",
   "editor.inlineSuggest.enabled": true,
@@ -130,5 +133,22 @@
     "markdown": false,
     "scminput": false
   },
-  "markdown-preview-enhanced.previewTheme": "github-dark.css"
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "settingsSync.ignoredExtensions": [
+    "vscode.theme-quietlight"
+  ],
+  //  configuracion de la terminal del Vscode
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "terminal.integrated.fontFamily": "Hack NF",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontWeight": "normal",
+  //
+  // Formater prettier -> tabulacion de 4 sapcios
+  "prettier.tabWidth": 4,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "[html]": {
+  //   "editor.tabSize": 2
+  // }
 }
