@@ -15,7 +15,7 @@
     "comments": "off",
     "strings": true
   },
-  "editor.suggestSelection": "recentlyUsed", //se seleciones la primera sugerencia por defecto
+  "editor.suggestSelection": "first", //se seleciones la primera sugerencia por defecto
   "editor.acceptSuggestionOnEnter": "on",
   //
   //

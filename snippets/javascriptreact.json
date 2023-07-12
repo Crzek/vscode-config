@@ -13,11 +13,32 @@
 	// 	"description": "Log output to console"
 	// }
 	"Import files": {
-		"prefix": "-import",
+		"prefix": "-import{}",
 		"body": [
-			"import ${2:Fucntion} from \"${1:./components}\";",
+			"import {${2:Fucntion}} from '${1:./components}';",
+		],
+		"description": "importacion con {}"
+	},
+	"Import files default": {
+		"prefix": "-importDefault",
+		"body": [
+			"import ${2:Fucntion} from '${1:./components}';",
+		],
+		"description": "importacion default"
+	},
+	"Import Lick": {
+		"prefix": "-importLink",
+		"body": [
+			"import { Link } from 'react-router-dom';"
 		],
 		"description": "importacion"
+	},
+	"Use Lick": {
+		"prefix": "-importLink",
+		"body": [
+			"<Link to=\"${1:/page2}\">Name</Link>\";"
+		],
+		"description": "Usar Link to=href"
 	},
 	"Styles components": {
 		"prefix": "-stylesComp",
@@ -30,7 +51,7 @@
 		"description": "Structure Stylescomponets"
 	},
 	"Styles-components Fucntion": {
-		"prefix": "-funStyle",
+		"prefix": "-styleFunc",
 		"body": [
 			"export const ${1:NameStyles} = styled.${2:div}`",
 			"\t${3}",
@@ -42,12 +63,130 @@
 		"prefix": "-raface",
 		"body": [
 			"import React from 'react'",
-			"const Popap = () => {",
+			"const ${1:Popap} = () => {",
 			"return (",
-			" <div>Popap</div>",
+			" <div>${1:Popap}</div>",
 			")",
 			"}",
-			"export default Popap",
-		]
-	}
+			"export default ${1:Popap}",
+		],
+		"description": "conponent react SAme name as File"
+	},
+	"Router react": {
+		"prefix": "-RoutesInit()",
+		"body": [
+			"import { BrowserRouter, Route, Routes} from 'react-router-dom';",
+			"",
+			"const Router = () => (",
+			"\t<BrowserRouter>",
+			"\t\t<Routes>",
+			"\t\t\t<Route index element={${1:<Home/>}} />",
+			"\t\t\t<Route path=\"${2:/page2/}\" element={${2:<Page2/>}} />",
+			"\t\t</Routes>",
+			"\t</BrowserRouter>",
+			");",
+			"",
+			"export default Router;",
+		],
+		"description": "Init for Router you need to install rect router"
+	},
+	"Router react init with return": {
+		"prefix": "-RoutesInit{}",
+		"body": [
+			"import { BrowserRouter, Route, Routes} from 'react-router-dom';",
+			"",
+			"const Router = () => {",
+			"\t<BrowserRouter>",
+			"\t\t<Routes>",
+			"\t\t\t<Route index element={${1:<Home/>}} />",
+			"\t\t\t<Route path=\"${2:/page2/}\" element={${2:<Page2/>}} />",
+			"\t\t</Routes>",
+			"\t</BrowserRouter>",
+			"};",
+			"",
+			"export default Router;",
+		],
+		"description": "Init for Router you need to install rect router"
+	},
+	"try - catch and finally": {
+		"prefix": "-try-catch-finaly",
+		"body": [
+			"try {",
+			"\t\t${1:code}",
+			"} catch (err) {",
+			"\t\tconsole.log('El error es:', err);",
+			"} finally {",
+			"\t\tconsole.log('Ejecución del finally');",
+			"}",
+		],
+		"description": "Catch exeptions try and catch"
+	},
+	"try and catch": {
+		"prefix": "-try-catch",
+		"body": [
+			"try {",
+			"\t\t${1:code}",
+			"} catch (err) {",
+			"\t\tconsole.log('El error es:', err);",
+			"}",
+		],
+		"description": "Catch exeptions try and catch"
+	},
+	"Random array function": {
+		"prefix": "-randomArray",
+		"body": [
+			"function shuffleArray(array) {",
+			"\t\treturn array.sort(() => Math.random() - 0.5);",
+			"}",
+		],
+		"description": "Change values of Array"
+	},
+	"Ternario ? en varible": {
+		"prefix": "-constTernario",
+		"body": [
+			"const ${1:valor} = ${2:condition} ? ${3:true} : ${4:false}",
+		],
+		"description": "Ternario en un  Cosntante"
+	},
+	"Arrow function ()=>{}": {
+		"prefix": "-funca",
+		"body": [
+			"(${1}) => {",
+			"\t${2}",
+			"}",
+		],
+		"description": "arrow funtion"
+	},
+	"Import useParams": {
+		"prefix": "-importuseParams",
+		"body": [
+			"import {useParams} from 'react-router-dom';",
+		],
+		"description": "import useParams"
+	},
+	"then and catch": {
+		"prefix": "-then",
+		"body": [
+			"import {useParams} from 'react-router-dom';",
+			"getStar().then((data) => {",
+			"\t${1}",
+			"\tconsole.log(data);",
+			"}).catch((error) => {",
+			"\tconsole.log(error);",
+			"});",
+		],
+		"description": "import useParams"
+	},
+	"fuction map": {
+		"prefix": "-mapfunc",
+		"body": [
+			"personaje.vehicles &&",
+			"\t${1:array}.map((${2:element}) => {",
+			"\t\treturn (",
+			"\t\t\t${3:code}",
+			");",
+			"}",
+		],
+		"description": "map function"
+	},
 }

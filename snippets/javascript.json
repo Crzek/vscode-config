@@ -72,7 +72,7 @@
 		"description": "arrow funtion"
 	},
 	"Arrow function in constant": {
-		"prefix": "-cfunca",
+		"prefix": "-funca2",
 		"body": [
 			"const ${1:varrible} =  (${2}) => {",
 			"\t${3}",
