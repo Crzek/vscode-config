@@ -63,7 +63,7 @@
 		"description": "Sintax ternario ?"
 	},
 	"Arrow function ()=>{}": {
-		"prefix": "-funca",
+		"prefix": "-funcLamda",
 		"body": [
 			"(${1}) => {",
 			"\t${2}",
@@ -72,7 +72,7 @@
 		"description": "arrow funtion"
 	},
 	"Arrow function in constant": {
-		"prefix": "-funca2",
+		"prefix": "-funclLamda=>",
 		"body": [
 			"const ${1:varrible} =  (${2}) => {",
 			"\t${3}",
@@ -88,5 +88,53 @@
 			"}"
 		],
 		"description": "Sintax ternario ?"
+	},
+	"Some for OBJ": {
+		"prefix": "-some",
+		"body": [
+			"const ${0:var} = ${1:objetos}.some(${2:obj} => ${2}.${3:age === 35});"
+		],
+		"description": "Almenos uno los obj cumpla la condicion, return Bool"
+	},
+	"every for OBJ": {
+		"prefix": "-every",
+		"body": [
+			"const ${0:var} = ${1:objetos}.every(${2:obj} => ${2}.${3:age === 35});"
+		],
+		"description": "Todos los obj cumpla la condicion, return Bool"
+	},
+	"for of": {
+		"prefix": "-forOF",
+		"body": [
+			"for (${1:variable} of ${2:iterable}) {",
+			"${3:code}",
+			"}"
+		],
+		"description": "bucle for para recorrer elementos"
+	},
+	"While": {
+		"prefix": "-while",
+		"body": [
+			"let ${1:valor} = 0;",
+			"\twhile(${1:valor}<4){",
+			"\t\t${2:code}",
+			"\t\t${1:valor}++;",
+			"}"
+		],
+		"description": "bucle while1"
+	},
+	"setTimeOut": {
+		"prefix": "-setTimeout",
+		"body": [
+			"setTimeout(${1:funcRefencia}, ${2:milSecgundo}, ${0:params func});"
+		],
+		"description": "ejecutar 1 funcion SOLO 1 VES"
+	},
+	"setInterval": {
+		"prefix": "-setInterval",
+		"body": [
+			"setInterval(${1:funcRefencia}, ${2:milSecgusdo}, ${0:params func});"
+		],
+		"description": "run F continuamente cada x timepo"
 	},
 }

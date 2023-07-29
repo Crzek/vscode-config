@@ -50,6 +50,21 @@
 		],
 		"description": "Structure Stylescomponets"
 	},
+	"Global Styles": {
+		"prefix": "-global-styles",
+		"body": [
+			"import { createGlobalStyle } from \"styled-components\";",
+			"",
+			"const GlobalStyles = createGlobalStyle`",
+			"  * {",
+			"    border: 1px solid black;",
+			"}",
+			"`;",
+			"",
+			"export default GlobalStyles;"
+		],
+		"description": "Create global styles using styled-components"
+	},
 	"Styles-components Fucntion": {
 		"prefix": "-styleFunc",
 		"body": [
@@ -95,16 +110,16 @@
 		"body": [
 			"import { BrowserRouter, Route, Routes} from 'react-router-dom';",
 			"",
-			"const Router = () => {",
-			"\t<BrowserRouter>",
+			"const ${1:Router} = () => {",
+			"\treturn (<BrowserRouter>",
 			"\t\t<Routes>",
 			"\t\t\t<Route index element={${1:<Home/>}} />",
-			"\t\t\t<Route path=\"${2:/page2/}\" element={${2:<Page2/>}} />",
+			"\t\t\t{*<Route path=\"${2:/page2/}\" element={${2:<Page2/>}}/> *}",
 			"\t\t</Routes>",
-			"\t</BrowserRouter>",
+			"\t</BrowserRouter>);",
 			"};",
 			"",
-			"export default Router;",
+			"export default ${1:Router};",
 		],
 		"description": "Init for Router you need to install rect router"
 	},
@@ -149,13 +164,22 @@
 		"description": "Ternario en un  Cosntante"
 	},
 	"Arrow function ()=>{}": {
-		"prefix": "-funca",
+		"prefix": "-func=>",
 		"body": [
 			"(${1}) => {",
 			"\t${2}",
 			"}",
 		],
 		"description": "arrow funtion"
+	},
+	"Arrow function in constant": {
+		"prefix": "-funclLamda=>",
+		"body": [
+			"const ${1:varrible} =  (${2}) => {",
+			"\t${3}",
+			"}",
+		],
+		"description": "Sintax arrow funtion in constant"
 	},
 	"Import useParams": {
 		"prefix": "-importuseParams",
@@ -164,13 +188,43 @@
 		],
 		"description": "import useParams"
 	},
+	"Params.id": {
+		"prefix": "-paramsID",
+		"body": [
+			"const params = useParams()",
+		],
+		"description": "import useParams"
+	},
+	"fetch request": {
+		"prefix": "-fetch",
+		"body": [
+			"fetch(${1:url})",
+			".then((res) => res.json()) // en fetch siempre se debe de pasar a json()",
+			".then((${2:data}) => {",
+			"\tconsole.log(${2:data});",
+			"\tconsole.log(${2:data});",
+			"})"
+		],
+		"description": "fetch API para solicitues"
+	},
+	"axios request": {
+		"prefix": "-axios",
+		"body": [
+			"fetch(${1:url})",
+			".then((res) => res.json()) // en fetch siempre se debe de pasar a json()",
+			".then((${2:data}) => {",
+			"\tconsole.log(${2:data});",
+			"})"
+		],
+		"description": "axiosI para solicitues"
+	},
 	"then and catch": {
 		"prefix": "-then",
 		"body": [
-			"import {useParams} from 'react-router-dom';",
-			"getStar().then((data) => {",
-			"\t${1}",
-			"\tconsole.log(data);",
+			"${1:getStar()}.then((${2:data}) => {",
+			"\t${3}",
+			"\tconsole.log(${2:data});",
+			"",
 			"}).catch((error) => {",
 			"\tconsole.log(error);",
 			"});",
@@ -180,7 +234,7 @@
 	"fuction map": {
 		"prefix": "-mapfunc",
 		"body": [
-			"personaje.vehicles &&",
+			"${1:array} &&",
 			"\t${1:array}.map((${2:element}) => {",
 			"\t\treturn (",
 			"\t\t\t${3:code}",
@@ -188,5 +242,198 @@
 			"}",
 		],
 		"description": "map function"
+	},
+	"fuction ForEach": {
+		"prefix": "-forEachfunc",
+		"body": [
+			"${1:array} &&",
+			"\t${1:array}.forEach((${2:element}) => {",
+			"\t\treturn (",
+			"\t\t\t${3:code}",
+			");",
+			"}",
+		],
+		"description": "forEach function"
+	},
+	"Context API": {
+		"prefix": "-contextComponent",
+		"body": [
+			"import { createContext, useState } from \"react\";",
+			"export const DataContext = createContext(); // varibles globales",
+			"",
+			"export const DataProvider = ({ children }) => {",
+			"// componenentes hijos",
+			"\t${1:const [data, setData] = useState()}",
+			"\treturn (",
+			"\t\t<DataContext.Provider",
+			"\t\t\t// compartimos valores con value que es un objeto",
+			"\t\t\tvalue={{${2:variables}}}", // poner Varibles,
+			"\t\t>",
+			"\t\t\t{children}",
+			"\t\t</DataContext.Provider>",
+			"\t);",
+			"};",
+		],
+		"description": "map function"
+	},
+	"Context Using in other componenents": {
+		"prefix": "-contextUsing",
+		"body": [
+			"import { useContext } from \"react\";",
+			"import { DataProvider, DataContext } from \"../context/DataContext\";"
+		],
+		"description": "Usar varibles glovales en este componente"
+	},
+	"Using varibles use Context": {
+		"prefix": "-useContext",
+		"body": [
+			"const context = useContext(DataContext);"
+		],
+		"description": "Acceder a la varibles con context.variable"
+	},
+	"Redirect - useNavigate": {
+		"prefix": "-useNavigate",
+		"body": [
+			"import { useNavigate } from \"react-router-dom\";",
+			"const navigate = useNavigate();",
+			"navigate(\"/page\")"
+		],
+		"description": "Import and use"
+	},
+	"Some for OBJ": {
+		"prefix": "-some",
+		"body": [
+			"const ${0:var} = ${1:objetos}.some(${2:obj} => ${2}.${3:age === 35});"
+		],
+		"description": "Almenos uno los obj cumpla la condicion, return Bool"
+	},
+	"every for OBJ": {
+		"prefix": "-every",
+		"body": [
+			"const ${0:var} = ${1:objetos}.every(${2:obj} => ${2}.${3:age === 35});"
+		],
+		"description": "Todos los obj cumpla la condicion, return Bool"
+	},
+	"for of": {
+		"prefix": "-forOF",
+		"body": [
+			"for (${1:variable} of ${2:iterable}) {",
+			"${3:code}",
+			"}"
+		],
+		"description": "bucle for para recorrer elementos"
+	},
+	"While": {
+		"prefix": "-while",
+		"body": [
+			"let ${1:valor} = 0;",
+			"\twhile(${1:valor}<4){",
+			"\t\t${2:code}",
+			"\t\t${1:valor}++;",
+			"}"
+		],
+		"description": "bucle while1"
+	},
+	"setTimeOut": {
+		"prefix": "-setTimeout",
+		"body": [
+			"setTimeout(${1:funcRefencia}, ${2:milSecgundo}, ${0:params func}); "
+		],
+		"description": "ejecutar 1 funcion SOLO 1 VES"
+	},
+	"setInterval": {
+		"prefix": "-setInterval",
+		"body": [
+			"setInterval(${1:funcRefencia}, ${2:milSecgusdo}, ${0:params func}); "
+		],
+		"description": "run F continuamente cada x timepo"
+	},
+	// REACT NATIVE
+	"Init Staks": {
+		"prefix": "-rnStakInit",
+		"body": [
+			"import React from 'react';",
+			"import { createNativeStackNavigator } from '@react-navigation/native-stack';",
+			"",
+			"const Stack = createNativeStackNavigator();",
+			"",
+			"// falta importar componete Home",
+			"",
+			"export default function ${1:Staks}() {",
+			"\treturn (",
+			"\t\t<Stack.Navigator>",
+			"\t\t\t<Stack.Screen name=\"Home\" component={Home} />",
+			"\t\t</Stack.Navigator>",
+			"\t);",
+			"}",
+			"const styles = StyleSheet.create({});",
+		],
+		"description": "init Stak Navigationn"
+	},
+	"Init Buttom Tab": {
+		"prefix": "-rnBtnTABInit",
+		"body": [
+			"import React from 'react';",
+			"import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';",
+			"",
+			"const Tab = createBottomTabNavigator();",
+			"",
+			"// falta importar componete Settings",
+			"",
+			"export default function ${1:ButtomTab}() {",
+			"\treturn (",
+			"\t\t<Tab.Navigator>",
+			"\t\t\t<Tab.Screen name=\"Settings\" component={Settings} />",
+			"\t\t</Tab.Navigator>",
+			"\t);",
+			"}",
+			"const styles = StyleSheet.create({});",
+		],
+		"description": "init Button TAB Navigationn"
+	},
+	"Init Drawer": {
+		"prefix": "-rnDrawerInit",
+		"body": [
+			"import React from 'react';",
+			"import { createDrawerNavigator } from '@react-navigation/drawer';",
+			"",
+			"const Drawer = createDrawerNavigator();",
+			"",
+			"// falta importar componetes ",
+			"",
+			"export default function ${1:MyDrawer}() {",
+			"\treturn (",
+			"\t\t<Drawer.Navigator>",
+			"\t\t\t<Drawer.Screen name=\"Home\" component={Home} />",
+			"\t\t</Drawer.Navigator>",
+			"\t);",
+			"}",
+			"const styles = StyleSheet.create({});",
+		],
+		"description": "init Button TAB Navigationn"
+	},
+	"Init Styles sheets": {
+		"prefix": "-rnStylesSheets",
+		"body": [
+			"import React from 'react';",
+			"import { StyleSheet, Text } from 'react-native';",
+			"// importante importar los componente que se utiliza como View, TExt",
+			"",
+			"const styles = StyleSheet.create({",
+			"// stylo base text",
+			"\ttext: {",
+			"\t\tcolor: 'black',",
+			"\t},",
+			"\tblond: {",
+			"\t\tfontWeight: 'bold',",
+			"\t},",
+			"});",
+			"",
+			"export default function ${1:StylesText}({ children, blond }) {",
+			"\tconst textStyles = [styles.text, blond && styles.blond];",
+			"\treturn <Text style={textStyles}>{children}</Text>;",
+			"}",
+		],
+		"description": "init Styles Sheets en new jsx"
 	},
 }
