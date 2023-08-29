@@ -1,64 +1,64 @@
 {
- // Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
- // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
- // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
- // same ids are connected.
- // Example:
- // "Print to console": {
- // 	"prefix": "log",
- // 	"body": [
- // 		"console.log('$1');",
- // 		"$2"
- // 	],
- // 	"description": "Log output to console"
- // }
- "svg-fast": {
-  "prefix": "-svg",
-  "body": [
-   "<svg xmlns=\"${1:src}\" viewBox=\"0 0 100 100\">",
-   "<path d=${2:cordenadas}/>",
-   "</svg>"
-  ],
-  "description": "Etiqueta svg con path[d=]"
- },
- // More info for random pixel 
- // https://picsum.photos/
- "lorem-pixel": {
-  "prefix": "-lorempx",
-  "body": [
-   "<img src=\"https://picsum.photos/${1:200}/${2:200}\" alt=\"photo ${1:200}/${2:200}\">"
-  ],
-  "description": "Generator Photo WIDTH / HEIGHT"
- },
- "label and input text": {
-  "prefix": "-labelin",
-  "body": [
-   "<label for=\"${0:nombre}\">${1:Nombre}</label>",
-   "<input type=\"text\" id=\"${0:nombre}\">",
-  ],
-  "description": "Generator fast label input"
- },
- "label and textbox": {
-  "prefix": "-labeltextbox",
-  "body": [
-   "<label for=\"${0:mensaje}\">{1:Mensaje}</label>",
-   "<textarea name=\"${0:mensaje}\" id=\"${0:mensaje}\"></textarea>"
-  ],
-  "description": "Generator fast label and textbox dor comment"
- },
- "barra de Navegacion": {
-  "prefix": "-navul",
-  "body": [
-   "<nav>",
-   "\t<ul>",
-   "\t<li><a class=\"active\" href=\"#\">Home</a></li>",
-   "\t<li><a href=\"#\">Home</a></li>",
-   "\t<li><a href=\"#\">Home</a></li>",
-   "\t<li><a href=\"#\">Home</a></li>",
-   "\t<li><a class=\"none\" href=\"#\">Home</a></li>",
-   "\t</ul>",
-   "</nav>",
-  ],
-  "description": "Generator fast nav -ul -li -a"
- },
+    // Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+    // same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+    "svg-fast": {
+        "prefix": "-svg",
+        "body": [
+            "<svg xmlns=\"${1:src}\" viewBox=\"0 0 100 100\">",
+            "<path d=${2:cordenadas}/>",
+            "</svg>"
+        ],
+        "description": "Etiqueta svg con path[d=]"
+    },
+    // More info for random pixel 
+    // https://picsum.photos/
+    "lorem-pixel": {
+        "prefix": "-lorempx",
+        "body": [
+            "<img src=\"https://picsum.photos/${1:200}/${2:200}\" alt=\"photo ${1:200}/${2:200}\">"
+        ],
+        "description": "Generator Photo WIDTH / HEIGHT"
+    },
+    "label and input text": {
+        "prefix": "-labelin",
+        "body": [
+            "<label for=\"${0:nombre}\">${1:Nombre}</label>",
+            "<input type=\"text\" id=\"${0:nombre}\">",
+        ],
+        "description": "Generator fast label input"
+    },
+    "label and textbox": {
+        "prefix": "-labeltextbox",
+        "body": [
+            "<label for=\"${0:mensaje}\">{1:Mensaje}</label>",
+            "<textarea name=\"${0:mensaje}\" id=\"${0:mensaje}\"></textarea>"
+        ],
+        "description": "Generator fast label and textbox dor comment"
+    },
+    "barra de Navegacion": {
+        "prefix": "-navul",
+        "body": [
+            "<nav>",
+            "\t<ul>",
+            "\t<li><a class=\"active\" href=\"#\">Home</a></li>",
+            "\t<li><a href=\"#\">Home</a></li>",
+            "\t<li><a href=\"#\">Home</a></li>",
+            "\t<li><a href=\"#\">Home</a></li>",
+            "\t<li><a class=\"none\" href=\"#\">Home</a></li>",
+            "\t</ul>",
+            "</nav>",
+        ],
+        "description": "Generator fast nav -ul -li -a"
+    },
 }
