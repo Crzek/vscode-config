@@ -31,7 +31,7 @@
     "when": "editorTextFocus && vim.mode =='Visual'"
   },
   {
-    "key": "shift+;",
+    "key": "alt+;",
     "command": "editor.action.moveSelectionToPreviousFindMatch",
     "when": "editorTextFocus && vim.mode =='Visual'"
   },
