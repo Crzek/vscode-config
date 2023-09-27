@@ -1,0 +1,539 @@
+{
+	// Place your snippets for javascriptreact here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Import files": {
+		"prefix": "-import{}",
+		"body": [
+			"import {${2:Fucntion}} from '${1:./components}';",
+		],
+		"description": "importacion con {}"
+	},
+	"Import files default": {
+		"prefix": "-importDefault",
+		"body": [
+			"import ${2:Fucntion} from '${1:./components}';",
+		],
+		"description": "importacion default"
+	},
+	"Import Lick": {
+		"prefix": "-importLink",
+		"body": [
+			"import { Link } from 'react-router-dom';"
+		],
+		"description": "importacion"
+	},
+	"Use Lick": {
+		"prefix": "-importLink",
+		"body": [
+			"<Link to=\"${1:/page2}\">Name</Link>\";"
+		],
+		"description": "Usar Link to=href"
+	},
+	"Styles components": {
+		"prefix": "-stylesComp",
+		"body": [
+			"import styled from 'styled-components';",
+			"export const ${1:Box} = styled.div`",
+			"\t${2}",
+			"`"
+		],
+		"description": "Structure Stylescomponets"
+	},
+	"Global Styles": {
+		"prefix": "-global-styles",
+		"body": [
+			"import { createGlobalStyle } from \"styled-components\";",
+			"",
+			"const GlobalStyles = createGlobalStyle`",
+			"  * {",
+			"    border: 1px solid black;",
+			"}",
+			"`;",
+			"",
+			"export default GlobalStyles;"
+		],
+		"description": "Create global styles using styled-components"
+	},
+	"Styles-components Fucntion": {
+		"prefix": "-styleFunc",
+		"body": [
+			"export const ${1:NameStyles} = styled.${2:div}`",
+			"\t${3}",
+			"`"
+		],
+		"description": "Structure Stylescomponets funtion"
+	},
+	"Structure Components": {
+		"prefix": "-raface",
+		"body": [
+			"import React from 'react'",
+			"const ${1:Popap} = () => {",
+			"return (",
+			" <div>${1:Popap}</div>",
+			")",
+			"}",
+			"export default ${1:Popap}",
+		],
+		"description": "conponent react SAme name as File"
+	},
+	"Router react": {
+		"prefix": "-RoutesInit()",
+		"body": [
+			"import { BrowserRouter, Route, Routes} from 'react-router-dom';",
+			"",
+			"const Router = () => (",
+			"\t<BrowserRouter>",
+			"\t\t<Routes>",
+			"\t\t\t<Route index element={${1:<Home/>}} />",
+			"\t\t\t<Route path=\"${2:/page2/}\" element={${2:<Page2/>}} />",
+			"\t\t</Routes>",
+			"\t</BrowserRouter>",
+			");",
+			"",
+			"export default Router;",
+		],
+		"description": "Init for Router you need to install rect router"
+	},
+	"Router react init with return": {
+		"prefix": "-RoutesInit{}",
+		"body": [
+			"import { BrowserRouter, Route, Routes} from 'react-router-dom';",
+			"",
+			"const ${1:Router} = () => {",
+			"\treturn (<BrowserRouter>",
+			"\t\t<Routes>",
+			"\t\t\t<Route index element={${1:<Home/>}} />",
+			"\t\t\t{*<Route path=\"${2:/page2/}\" element={${2:<Page2/>}}/> *}",
+			"\t\t</Routes>",
+			"\t</BrowserRouter>);",
+			"};",
+			"",
+			"export default ${1:Router};",
+		],
+		"description": "Init for Router you need to install rect router"
+	},
+	"try - catch and finally": {
+		"prefix": "-try-catch-finaly",
+		"body": [
+			"try {",
+			"\t\t${1:code}",
+			"} catch (err) {",
+			"\t\tconsole.log('El error es:', err);",
+			"} finally {",
+			"\t\tconsole.log('Ejecución del finally');",
+			"}",
+		],
+		"description": "Catch exeptions try and catch"
+	},
+	"try and catch": {
+		"prefix": "-try-catch",
+		"body": [
+			"try {",
+			"\t\t${1:code}",
+			"} catch (err) {",
+			"\t\tconsole.log('El error es:', err);",
+			"}",
+		],
+		"description": "Catch exeptions try and catch"
+	},
+	"Random array function": {
+		"prefix": "-randomArray",
+		"body": [
+			"function shuffleArray(array) {",
+			"\t\treturn array.sort(() => Math.random() - 0.5);",
+			"}",
+		],
+		"description": "Change values of Array"
+	},
+	"Ternario ? en varible": {
+		"prefix": "-constTernario",
+		"body": [
+			"const ${1:valor} = ${2:condition} ? ${3:true} : ${4:false}",
+		],
+		"description": "Ternario en un  Cosntante"
+	},
+	"Arrow function ()=>{}": {
+		"prefix": "-func=>",
+		"body": [
+			"(${1}) => {",
+			"\t${2}",
+			"}",
+		],
+		"description": "arrow funtion"
+	},
+	"Arrow function in constant": {
+		"prefix": "-funclLamda=>",
+		"body": [
+			"const ${1:varrible} =  (${2}) => {",
+			"\t${3}",
+			"}",
+		],
+		"description": "Sintax arrow funtion in constant"
+	},
+	"Import useParams": {
+		"prefix": "-importuseParams",
+		"body": [
+			"import {useParams} from 'react-router-dom';",
+		],
+		"description": "import useParams"
+	},
+	"Params.id": {
+		"prefix": "-paramsID",
+		"body": [
+			"const params = useParams()",
+		],
+		"description": "import useParams"
+	},
+	"fetch request": {
+		"prefix": "-fetch",
+		"body": [
+			"fetch(${1:url})",
+			".then((res) => res.json()) // en fetch siempre se debe de pasar a json()",
+			".then((${2:data}) => {",
+			"\tconsole.log(${2:data});",
+			"\tconsole.log(${2:data});",
+			"})"
+		],
+		"description": "fetch API para solicitues"
+	},
+	"axios request": {
+		"prefix": "-axios",
+		"body": [
+			"fetch(${1:url})",
+			".then((res) => res.json()) // en fetch siempre se debe de pasar a json()",
+			".then((${2:data}) => {",
+			"\tconsole.log(${2:data});",
+			"})"
+		],
+		"description": "axiosI para solicitues"
+	},
+	"then and catch": {
+		"prefix": "-then",
+		"body": [
+			"${1:getStar()}.then((${2:data}) => {",
+			"\t${3}",
+			"\tconsole.log(${2:data});",
+			"",
+			"}).catch((error) => {",
+			"\tconsole.log(error);",
+			"});",
+		],
+		"description": "import useParams"
+	},
+	"fuction map": {
+		"prefix": "-mapfunc",
+		"body": [
+			"${1:array} &&",
+			"\t${1:array}.map((${2:element}) => {",
+			"\t\treturn (",
+			"\t\t\t${3:code}",
+			");",
+			"}",
+		],
+		"description": "map function"
+	},
+	"fuction ForEach": {
+		"prefix": "-forEachfunc",
+		"body": [
+			"${1:array} &&",
+			"\t${1:array}.forEach((${2:element}) => {",
+			"\t\treturn (",
+			"\t\t\t${3:code}",
+			");",
+			"}",
+		],
+		"description": "forEach function"
+	},
+	"Context API": {
+		"prefix": "-contextComponent",
+		"body": [
+			"import { createContext, useState } from \"react\";",
+			"export const DataContext = createContext(); // varibles globales",
+			"",
+			"export const DataProvider = ({ children }) => {",
+			"// componenentes hijos",
+			"\t${1:const [data, setData] = useState()}",
+			"\treturn (",
+			"\t\t<DataContext.Provider",
+			"\t\t\t// compartimos valores con value que es un objeto",
+			"\t\t\tvalue={{${2:variables}}}", // poner Varibles,
+			"\t\t>",
+			"\t\t\t{children}",
+			"\t\t</DataContext.Provider>",
+			"\t);",
+			"};",
+		],
+		"description": "map function"
+	},
+	"Context Using in other componenents": {
+		"prefix": "-contextUsing",
+		"body": [
+			"import { useContext } from \"react\";",
+			"import { DataProvider, DataContext } from \"../context/DataContext\";"
+		],
+		"description": "Usar varibles glovales en este componente"
+	},
+	"Using varibles use Context": {
+		"prefix": "-useContext",
+		"body": [
+			"const context = useContext(DataContext);"
+		],
+		"description": "Acceder a la varibles con context.variable"
+	},
+	"Redirect - useNavigate": {
+		"prefix": "-useNavigate",
+		"body": [
+			"import { useNavigate } from \"react-router-dom\";",
+			"const navigate = useNavigate();",
+			"navigate(\"/page\")"
+		],
+		"description": "Import and use"
+	},
+	"Some for OBJ": {
+		"prefix": "-some",
+		"body": [
+			"const ${0:var} = ${1:objetos}.some(${2:obj} => ${2}.${3:age === 35});"
+		],
+		"description": "Almenos uno los obj cumpla la condicion, return Bool"
+	},
+	"every for OBJ": {
+		"prefix": "-every",
+		"body": [
+			"const ${0:var} = ${1:objetos}.every(${2:obj} => ${2}.${3:age === 35});"
+		],
+		"description": "Todos los obj cumpla la condicion, return Bool"
+	},
+	"for of": {
+		"prefix": "-forOF",
+		"body": [
+			"for (${1:variable} of ${2:iterable}) {",
+			"${3:code}",
+			"}"
+		],
+		"description": "bucle for para recorrer elementos"
+	},
+	"While": {
+		"prefix": "-while",
+		"body": [
+			"let ${1:valor} = 0;",
+			"\twhile(${1:valor}<4){",
+			"\t\t${2:code}",
+			"\t\t${1:valor}++;",
+			"}"
+		],
+		"description": "bucle while1"
+	},
+	"setTimeOut": {
+		"prefix": "-setTimeout",
+		"body": [
+			"setTimeout(${1:funcRefencia}, ${2:milSecgundo}, ${0:params func}); "
+		],
+		"description": "ejecutar 1 funcion SOLO 1 VES"
+	},
+	"setInterval": {
+		"prefix": "-setInterval",
+		"body": [
+			"const intervalId = setInterval(${1:funcRefencia}, ${2:milSecgusdo}, ${0:params func}); ",
+		],
+		"description": "run F continuamente cada x timepo"
+	},
+	// REACT NATIVE
+	"Init Staks": {
+		"prefix": "-rnStakInit",
+		"body": [
+			"import React from 'react';",
+			"",
+			"// Navigation Imports",
+			"import { createNativeStackNavigator } from '@react-navigation/native-stack';",
+			"import { NavigationContainer } from '@react-navigation/native';",
+			"",
+			"// falta importar componete Home",
+			"",
+			"const Stack = createNativeStackNavigator();",
+			"",
+			"function ${1:Staks}() {",
+			"\treturn (",
+			"\t\t<Stack.Navigator>",
+			"\t\t\t<Stack.Screen name=\"Home\" component={Home} />",
+			"\t\t</Stack.Navigator>",
+			"\t);",
+			"}",
+			"",
+			"// mismo nombre fichero",
+			"export default function Navigation${1}() {",
+			"    \treturn (",
+			"\t\t<NavigationContainer>",
+			"\t\t\t<${1} />",
+			"\t\t</NavigationContainer>",
+			"\t);",
+			"}",
+		],
+		"description": "init Stak Navigationn"
+	},
+	"Init Buttom Tab": {
+		"prefix": "-rnBtnTABInit",
+		"body": [
+			"import React from 'react';",
+			"",
+			"// Navigation Imports",
+			"import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';",
+			"import { NavigationContainer } from '@react-navigation/native';",
+			"",
+			"// falta importar componete Settings",
+			"",
+			"",
+			"const Tab = createBottomTabNavigator();",
+			"",
+			"function ${1:ButtomTab}() {",
+			"\treturn (",
+			"\t\t<Tab.Navigator>",
+			"\t\t\t<Tab.Screen name=\"${2:Settings}\" component={${3}} />",
+			"\t\t</Tab.Navigator>",
+			"\t);",
+			"}",
+			"",
+			"// mismo nombre fichero",
+			"export default function Navigation${1}() {",
+			"    \treturn (",
+			"\t\t<NavigationContainer>",
+			"\t\t\t<${1} />",
+			"\t\t</NavigationContainer>",
+			"\t);",
+			"}",
+		],
+		"description": "init Button TAB Navigationn"
+	},
+	"Init Drawer": {
+		"prefix": "-rnDrawerInit",
+		"body": [
+			"import React from 'react';",
+			"",
+			"// Navigation Imports",
+			"import { createDrawerNavigator } from '@react-navigation/drawer';",
+			"import { NavigationContainer } from '@react-navigation/native';",
+			"",
+			"// falta importar componetes ",
+			"",
+			"const Drawer = createDrawerNavigator();",
+			"",
+			"function ${1:MyDrawer}() {",
+			"\treturn (",
+			"\t\t<Drawer.Navigator>",
+			"\t\t\t<Drawer.Screen name=\"Home\" component={Home} />",
+			"\t\t</Drawer.Navigator>",
+			"\t);",
+			"}",
+			"// mismo nombre fichero",
+			"export default function Navigation${1}() {",
+			"    \treturn (",
+			"\t\t<NavigationContainer>",
+			"\t\t\t<${1} />",
+			"\t\t</NavigationContainer>",
+			"\t);",
+			"}",
+		],
+		"description": "init Drawer Navigationn"
+	},
+	"Init Material Buttom Tab": {
+		"prefix": "-rnMaterialBtnTABInit",
+		"body": [
+			"import React from 'react';",
+			"",
+			"// Navigation Imports npm install @react-navigation/material-bottom-tabs react-native-paper react-native-vector-icons",
+			"import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';",
+			"import { NavigationContainer } from '@react-navigation/native';",
+			"",
+			"// falta importar componete Settings",
+			"",
+			"",
+			"const Tab = createMaterialBottomTabNavigator();",
+			"",
+			"function ${1:ButtomTab}() {",
+			"\treturn (",
+			"\t\t<Tab.Navigator>",
+			"\t\t\t<Tab.Screen name=\"${2:Settings}\" component={${3}} />",
+			"\t\t</Tab.Navigator>",
+			"\t);",
+			"}",
+			"",
+			"// mismo nombre fichero",
+			"export default function Navigation${1}() {",
+			"    \treturn (",
+			"\t\t<NavigationContainer>",
+			"\t\t\t<${1} />",
+			"\t\t</NavigationContainer>",
+			"\t);",
+			"}",
+		],
+		"description": "init AMterial Button TAB Navigationn"
+	},
+	"Init Top Tab": {
+		"prefix": "-rnTopTABInit",
+		"body": [
+			"import React from 'react';",
+			"",
+			"// Navigation Imports npm install @react-navigation/material-top-tabs react-native-tab-view",
+			"// npx expo install react-native-pager-view",
+			"import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';;",
+			"import { NavigationContainer } from '@react-navigation/native';",
+			"",
+			"// falta importar componete Settings",
+			"",
+			"",
+			"const Tab = createMaterialTopTabNavigator();",
+			"",
+			"function ${1:ButtomTab}() {",
+			"\treturn (",
+			"\t\t<Tab.Navigator>",
+			"\t\t\t<Tab.Screen name=\"${2:Settings}\" component={${3}} />",
+			"\t\t</Tab.Navigator>",
+			"\t);",
+			"}",
+			"",
+			"// mismo nombre fichero",
+			"export default function Navigation${1}() {",
+			"    \treturn (",
+			"\t\t<NavigationContainer>",
+			"\t\t\t<${1} />",
+			"\t\t</NavigationContainer>",
+			"\t);",
+			"}",
+		],
+		"description": "init AMterial Button TAB Navigationn"
+	},
+	"Init Styles sheets": {
+		"prefix": "-rnStylesSheets",
+		"body": [
+			"import React from 'react';",
+			"import { StyleSheet, Text } from 'react-native';",
+			"// importante importar los componente que se utiliza como View, TExt",
+			"",
+			"const styles = StyleSheet.create({",
+			"// stylo base text",
+			"\ttext: {",
+			"\t\tcolor: 'black',",
+			"\t},",
+			"\tblond: {",
+			"\t\tfontWeight: 'bold',",
+			"\t},",
+			"});",
+			"",
+			"export default function ${1:StylesText}({ children, blond }) {",
+			"\tconst textStyles = [styles.text, blond && styles.blond];",
+			"\treturn <Text style={textStyles}>{children}</Text>;",
+			"}",
+		],
+		"description": "init Styles Sheets en new jsx"
+	},
+}

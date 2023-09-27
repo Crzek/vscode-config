@@ -1,0 +1,140 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Generate lista": {
+		"prefix": "-lista",
+		"body": [
+			"const ${1:lista} = [${0:values}]",
+		],
+		"description": "declarate array"
+	},
+	"Number Random": {
+		"prefix": "-randomN",
+		"body": [
+			"Math.floor(Math.random() * (${1:MAX} - ${0:MIN}) + 1) + ${0:MIN}",
+		],
+		"description": "Generate random number"
+	},
+	"try and catch": {
+		"prefix": "-try-catch",
+		"body": [
+			"try {",
+			"\t\t${1:code}",
+			"} catch (err) {",
+			"\t\tconsole.log('El error es:', err);",
+			"} finally {",
+			"\t\tconsole.log('Ejecución del finally');",
+			"}",
+		],
+		"description": "Catch exeptions try and catch"
+	},
+	"Random array function": {
+		"prefix": "-randomArray",
+		"body": [
+			"function shuffleArray(array) {",
+			"\t\treturn array.sort(() => Math.random() - 0.5);",
+			"}",
+		],
+		"description": "Change values of Array"
+	},
+	"Ternario ? en varible": {
+		"prefix": "-constTernario",
+		"body": [
+			"const ${1:valor} = ${2:condition} ? ${3:true} : ${4:false}",
+		],
+		"description": "Ternario en un  Cosntante"
+	},
+	"Ternario ?": {
+		"prefix": "-ternario",
+		"body": [
+			"${1:condition} ? ${2:true} : ${3:flase}",
+		],
+		"description": "Sintax ternario ?"
+	},
+	"Arrow function ()=>{}": {
+		"prefix": "-funcLamda",
+		"body": [
+			"(${1}) => {",
+			"\t${2}",
+			"}",
+		],
+		"description": "arrow funtion"
+	},
+	"Arrow function in constant": {
+		"prefix": "-funclLamda=>",
+		"body": [
+			"const ${1:varrible} =  (${2}) => {",
+			"\t${3}",
+			"}",
+		],
+		"description": "Sintax arrow funtion in constant"
+	},
+	"Normal function": {
+		"prefix": "-func",
+		"body": [
+			"function ${1:name}(${2:args}){",
+			"\t${3}",
+			"}"
+		],
+		"description": "Sintax ternario ?"
+	},
+	"Some for OBJ": {
+		"prefix": "-some",
+		"body": [
+			"const ${0:var} = ${1:objetos}.some(${2:obj} => ${2}.${3:age === 35});"
+		],
+		"description": "Almenos uno los obj cumpla la condicion, return Bool"
+	},
+	"every for OBJ": {
+		"prefix": "-every",
+		"body": [
+			"const ${0:var} = ${1:objetos}.every(${2:obj} => ${2}.${3:age === 35});"
+		],
+		"description": "Todos los obj cumpla la condicion, return Bool"
+	},
+	"for of": {
+		"prefix": "-forOF",
+		"body": [
+			"for (${1:variable} of ${2:iterable}) {",
+			"${3:code}",
+			"}"
+		],
+		"description": "bucle for para recorrer elementos"
+	},
+	"While": {
+		"prefix": "-while",
+		"body": [
+			"let ${1:valor} = 0;",
+			"\twhile(${1:valor}<4){",
+			"\t\t${2:code}",
+			"\t\t${1:valor}++;",
+			"}"
+		],
+		"description": "bucle while1"
+	},
+	"setTimeOut": {
+		"prefix": "-setTimeout",
+		"body": [
+			"setTimeout(${1:funcRefencia}, ${2:milSecgundo}, ${0:params func});"
+		],
+		"description": "ejecutar 1 funcion SOLO 1 VES"
+	},
+	"setInterval": {
+		"prefix": "-setInterval",
+		"body": [
+			"setInterval(${1:funcRefencia}, ${2:milSecgusdo}, ${0:params func});"
+		],
+		"description": "run F continuamente cada x timepo"
+	},
+}
