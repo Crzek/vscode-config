@@ -132,7 +132,7 @@
     "vscode.theme-quietlight"
   ],
   //  configuracion de la terminal del Vscode
-  "workbench.colorTheme": "Gruvbox Material Dark",
+  "workbench.colorTheme": "Gruvbox ish Dark Medium",
   "terminal.integrated.fontFamily": "Hack NF",
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontWeight": "normal"

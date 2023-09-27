@@ -1,7 +1,7 @@
 # VScode-config
 Configuration files for Visual Studio Code, import files:
 
-## what can i modify?
+## what can i modify ?
 - **snippets**
     
     This folder I keep the custom snippets, if you want to add new ones in a different language. example: add snippets for css, create css.json folder
