@@ -73,7 +73,10 @@
   },
   //Detectar HTML en una cadena de Javascript
   "emmet.syntaxProfiles": {
-    "javascript": "html"
+    "javascript": [
+      "html",
+      "jsx"
+    ]
   },
   "emmet.includeLanguages": {
     "javascript": "html"
