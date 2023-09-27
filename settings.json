@@ -129,7 +129,7 @@
   "editor.inlineSuggest.enabled": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "plaintext": false,
     "markdown": false,
     "scminput": false
@@ -140,7 +140,7 @@
     "vscode.theme-monokai-dimmed"
   ],
   //  configuracion de la terminal del Vscode
-  "workbench.colorTheme": "Gruvbox ish Dark Medium",
+  "workbench.colorTheme": "Gruvbox Material Dark",
   "terminal.integrated.fontFamily": "Hack NF",
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.fontWeight": "normal",
@@ -162,6 +162,7 @@
       "strings": true
     }
   },
+  "redhat.telemetry.enabled": true,
   // para visualizar barra de extenciones
   // "workbench.activityBar.visible": false,
   // "[html]": {
