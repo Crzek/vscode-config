@@ -132,21 +132,18 @@
   "editor.inlineSuggest.enabled": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false
   },
   "markdown-preview-enhanced.previewTheme": "github-dark.css",
   "settingsSync.ignoredExtensions": [
-
     "vscode.theme-quietlight"
-
   ],
   //  configuracion de la terminal del Vscode
-  "workbench.colorTheme": "Gruvbox Material Dark",
+  "workbench.colorTheme": "Gruvbox ish Dark Medium",
   "terminal.integrated.fontFamily": "Hack NF",
-
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.fontWeight": "normal",
   //
@@ -168,10 +165,24 @@
     }
   },
   "redhat.telemetry.enabled": true,
+  "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+  "workbench.editor.empty.hint": "hidden",
+  "window.zoomLevel": 1,
+  "workbench.sideBar.location": "right",
   // para visualizar barra de extenciones
   // "workbench.activityBar.visible": false,
   // "[html]": {
   //   "editor.tabSize": 2
   // }
-
+  // ---------------------------------------------------------
+  //
+  // JAVA CONFIG
+  "java.jdt.ls.java.home": "E:\\Program Files\\Java\\jdk-21",
+  // "java.configuration.runtimes": [
+  //   {
+  //     "name": "JavaSE-20",
+  //     "path": "E:\\Program Files\\Java\\jdk-21",
+  //     "default": true
+  //   }
+  // ],
 }

@@ -82,7 +82,7 @@
     "when": "editorTextFocus && hasNextTabstop && inSnippetMode"
   },
   {
-    "key": ",",
+    "key": "alt+;",
     "command": "jumpToPrevSnippetPlaceholder",
     "when": "editorTextFocus && hasNextTabstop && inSnippetMode"
   },
