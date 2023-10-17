@@ -25,13 +25,14 @@
     "command": "editor.action.addSelectionToNextFindMatch",
     "when": "editorTextFocus || editorFocus"
   },
+  // Al entra modo visual se puede buacar lo que tenemos subrrayado
   {
     "key": ";",
     "command": "editor.action.moveSelectionToNextFindMatch",
     "when": "editorTextFocus && vim.mode =='Visual'"
   },
   {
-    "key": "alt+;",
+    "key": "shift+;",
     "command": "editor.action.moveSelectionToPreviousFindMatch",
     "when": "editorTextFocus && vim.mode =='Visual'"
   },
@@ -82,7 +83,7 @@
     "when": "editorTextFocus && hasNextTabstop && inSnippetMode"
   },
   {
-    "key": ",",
+    "key": "alt+;",
     "command": "jumpToPrevSnippetPlaceholder",
     "when": "editorTextFocus && hasNextTabstop && inSnippetMode"
   },

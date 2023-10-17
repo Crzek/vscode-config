@@ -132,7 +132,7 @@
   "editor.inlineSuggest.enabled": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false
@@ -165,6 +165,8 @@
       "strings": true
     }
   },
+  "git.openRepositoryInParentFolders": "always",
+  "workbench.editor.empty.hint": "hidden",
   // para visualizar barra de extenciones
   // "workbench.activityBar.visible": false,
   // "[html]": {
