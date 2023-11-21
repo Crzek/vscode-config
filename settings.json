@@ -1,6 +1,5 @@
 {
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.editor.untitled.hint": "hidden",
   // Editor
   "editor.bracketPairColorization.enabled": true,
   "editor.fontLigatures": false,
